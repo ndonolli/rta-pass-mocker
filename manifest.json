@@ -1,0 +1,17 @@
+{
+    "short_name": "RTA Ticket",
+    "name": "RTA Ticket",
+    "description": "fuck da RTA",
+    "start_url": "/",
+    "background_color": "#000000",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#000000",
+    "icons": [
+        {
+          "src": "rta_icon.png",
+          "type": "image/png",
+          "sizes": "256x256"
+        }
+    ]
+  }
