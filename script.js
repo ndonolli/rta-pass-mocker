@@ -7,7 +7,10 @@ let createDateString = date => {
     const day = date.getDate();
     const year = date.getFullYear();
     const hour = date.getHours();
-    const minute = date.getMinutes();
+    let minute = date.getMinutes().toString();
+    if (minute.length === 1) {
+        minute = '0' + minute;
+    }
     const ampm = hour >= 12 ? 'PM' : 'AM';
     const formatted = `${month} ${day}, ${year}, ${hour}:${minute} ${ampm}`;
     return formatted;
@@ -16,8 +19,14 @@ let createDateString = date => {
 let createTimeString = () => {
     const date = new Date();
     const hour = date.getHours();
-    const minute = date.getMinutes();
-    const second = date.getSeconds();
+    let minute = date.getMinutes().toString();
+    if (minute.length === 1) {
+        minute = '0' + minute;
+    }
+    let second = date.getSeconds().toString();
+    if (second.length === 1) {
+        second = '0' + second;
+    }
     const ampm = hour >= 12 ? 'PM' : 'AM';
     const formatted = `${hour}:${minute}:${second} ${ampm}`;
     return formatted;

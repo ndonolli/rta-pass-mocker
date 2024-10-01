@@ -41,6 +41,7 @@ main {
   font-weight: 700;
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   margin-bottom: 15px;
+  text-wrap: nowrap;
 }
 
 .pass-info {
