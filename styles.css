@@ -1,4 +1,50 @@
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-info-agency {
+  font-size: 24px;
+  font-weight: 650;
+}
+
+.header-info-desc {
+  font-weight: 500;
+}
+
+.header-close {
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.logo-container {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
 .logo {
   width: 100%;
   height: 100%;
+}
+
+.clock {
+  text-align: center;
+  font-size: 65px;
+  font-weight: 700;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom: 15px;
+}
+
+.pass-info {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
 }
