@@ -1,6 +1,6 @@
-const now = new Date();
-
-let createDateString = date => {
+let createDateString = () => {
+    let date = new Date();
+    date.setHours(date.getHours() + 24) // tomorrow
     const dateStr = date.toString()
     const dateTokens = dateStr.split(' ');
     const month = dateTokens[1];
@@ -39,7 +39,7 @@ let setClock = () => {
 }
 
 
-const expiryDateString = createDateString(now);
+const expiryDateString = createDateString();
 setClock();
 
 const expiryDate = document.getElementById('expiry-date-string');
