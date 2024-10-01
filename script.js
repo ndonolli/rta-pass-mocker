@@ -6,19 +6,24 @@ let createDateString = () => {
     const month = dateTokens[1];
     const day = date.getDate();
     const year = date.getFullYear();
-    const hour = date.getHours();
+    let hour = date.getHours();
     let minute = date.getMinutes().toString();
+    const isPM = hour >= 12;
+
     if (minute.length === 1) {
         minute = '0' + minute;
     }
-    const ampm = hour >= 12 ? 'PM' : 'AM';
+    const ampm = isPM ? 'PM' : 'AM';
+    hour = isPM ? hour - 12 : hour;
     const formatted = `${month} ${day}, ${year}, ${hour}:${minute} ${ampm}`;
     return formatted;
 }
 
 let createTimeString = () => {
     const date = new Date();
-    const hour = date.getHours();
+    let hour = date.getHours();
+    const isPM = hour >= 12;
+
     let minute = date.getMinutes().toString();
     if (minute.length === 1) {
         minute = '0' + minute;
@@ -27,7 +32,9 @@ let createTimeString = () => {
     if (second.length === 1) {
         second = '0' + second;
     }
-    const ampm = hour >= 12 ? 'PM' : 'AM';
+    const ampm = isPM ? 'PM' : 'AM';
+
+    hour = isPM ? hour - 12 : hour;
     const formatted = `${hour}:${minute}:${second} ${ampm}`;
     return formatted;
 }
