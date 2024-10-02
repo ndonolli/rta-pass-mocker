@@ -34,7 +34,7 @@ let createTimeString = () => {
     }
     const ampm = isPM ? 'PM' : 'AM';
 
-    hour = isPM ? hour - 12 : hour;
+    hour = (isPM && hour !== 12) ? hour - 12 : hour;
     const formatted = `${hour}:${minute}:${second} ${ampm}`;
     return formatted;
 }
