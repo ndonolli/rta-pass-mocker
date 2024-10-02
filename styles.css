@@ -11,7 +11,7 @@ main {
   justify-content: space-between;
 }
 
-.header-info-agency {
+#header-info-agency {
   font-size: 24px;
   font-weight: 650;
 }
@@ -20,7 +20,7 @@ main {
   font-weight: 500;
 }
 
-.header-close {
+#header-close {
   font-size: 24px;
   font-weight: 100;
 }
@@ -30,7 +30,7 @@ main {
   margin-bottom: 30px;
 }
 
-.logo {
+#logo {
   width: 100%;
   height: 100%;
 }
@@ -51,15 +51,15 @@ main {
   flex-direction: column;
   border: 1px solid #E8E8E8;
   border-radius: 5px;
-  box-shadow: 0px 2px 2px rgba(189, 189, 189, 0.9);;
+  box-shadow: 0px 2px 2px rgba(189, 189, 189, 0.9);
 }
 
-.pass-info-title {
+#pass-info-title {
   font-size: 25px;
   font-weight: 600;
 }
 
-.pass-info-location {
+#pass-info-location {
   font-size: 14px;
   color: grey;
   font-weight: 500;

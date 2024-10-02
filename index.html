@@ -29,21 +29,29 @@
   </head>
   <body>
     <main>
-      <div class="header">
-        <div class="header-info">
-          <div class="header-info-agency">RTA</div>
-          <div class="header-info-desc">Show operator your ticket</div>
+      <div id="pass-container" style="display: none;">
+        <div class="header">
+          <div class="header-info">
+            <div id="header-info-agency">RTA</div>
+            <div class="header-info-desc">Show operator your ticket</div>
+          </div>
+          <div id="header-close">&#x2715;</div>
         </div>
-        <div class="header-close">&#x2715;</div>
+        <div class="logo-container">
+          <img id="logo" src="rta_logo.webp" />
+        </div>
+        <div id="clock"></div>
+        <div class="pass-info">
+          <div id="pass-info-title">Adult Jazzy Pass 1 Day</div>
+          <div id="pass-info-location">New Orleans, LA</div>
+          <div class="pass-info-expiry">Expires <span id="expiry-date-string"></span></div>
+        </div>
       </div>
-      <div class="logo-container">
-        <img class="logo" src="rta_logo.webp" />
-      </div>
-      <div id="clock"></div>
-      <div class="pass-info">
-        <div class="pass-info-title">Adult Jazzy Pass 1 Day</div>
-        <div class="pass-info-location">New Orleans, LA</div>
-        <div class="pass-info-expiry">Expires <span id="expiry-date-string"></span></div>
+
+      <div id="menu-container" style="display: none;">
+        <div>fuck da rta</div>
+        <div id="rta-pass-btn">RTA Pass</div>
+        <div id="jpt-pass-btn">JPT Pass</div>
       </div>
     </main>
   </body>
