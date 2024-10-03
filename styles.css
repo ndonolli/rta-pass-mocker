@@ -11,7 +11,7 @@ main {
   justify-content: space-between;
 }
 
-.header-info-agency {
+#header-info-agency {
   font-size: 24px;
   font-weight: 650;
 }
@@ -20,7 +20,7 @@ main {
   font-weight: 500;
 }
 
-.header-close {
+#header-close {
   font-size: 24px;
   font-weight: 100;
 }
@@ -30,7 +30,7 @@ main {
   margin-bottom: 30px;
 }
 
-.logo {
+#logo {
   width: 100%;
   height: 100%;
 }
@@ -51,15 +51,15 @@ main {
   flex-direction: column;
   border: 1px solid #E8E8E8;
   border-radius: 5px;
-  box-shadow: 0px 2px 2px rgba(189, 189, 189, 0.9);;
+  box-shadow: 0px 2px 2px rgba(189, 189, 189, 0.9);
 }
 
-.pass-info-title {
+#pass-info-title {
   font-size: 25px;
   font-weight: 600;
 }
 
-.pass-info-location {
+#pass-info-location {
   font-size: 14px;
   color: grey;
   font-weight: 500;
@@ -69,4 +69,44 @@ main {
   margin-top: 40px;
   font-size: 15px;
   font-weight: 700;
+}
+
+#menu-title {
+  text-align: center;
+  font-size: 46px;
+  margin-bottom: 40px;
+}
+
+
+#menu-buttons {
+  display: flex;
+  flex-direction: column;
+  height: 75vh;
+  justify-content: space-evenly;
+
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #414141;
+  height: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 2px rgba(189, 189, 189, 0.9);
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.btn-rta {
+  background-color: #f3c93f;
+}
+
+.btn-jpt {
+  background-color: #1e068a;
+  color: white;
+}
+
+#subtext {
+  text-align: center;
 }
