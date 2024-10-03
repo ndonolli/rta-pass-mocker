@@ -28,7 +28,7 @@ let renderPass = (type) => {
     logo.src = isRTA ? 'rta_logo.webp' : 'jpt_logo.webp';
 
     const passInfoTitle = document.getElementById('pass-info-title');
-    passInfoTitle.innerText = isRTA ? 'Adult Jazzy Pass 1 Day' : 'Adult 1 Ride';
+    passInfoTitle.innerText = isRTA ? 'Adult Jazzy Pass 1 Day' : 'Adult Day';
 
     const passInfoLocation = document.getElementById('pass-info-location');
     passInfoLocation.innerText = isRTA ? 'New Orleans, LA' : 'Jefferson Parish, LA';
