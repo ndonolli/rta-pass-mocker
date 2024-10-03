@@ -18,6 +18,9 @@ let render = () => {
 }
 
 let renderPass = (type) => {
+    const quantityLabel = document.getElementById('quantity-label');
+    quantityLabel.style.display = 'none';
+
     const expiryDateString = createDateString();
 
     const isRTA = type === 'rta';
@@ -34,6 +37,15 @@ let renderPass = (type) => {
     passInfoLocation.innerText = isRTA ? 'New Orleans, LA' : 'Jefferson Parish, LA';
     
     setClock();
+
+    const quantity = document.getElementById('quantity-selector');
+    const quantityText = document.getElementById('quantity-label-amount');
+
+    if (quantity.value !== '1') {
+        quantityLabel.style.display = '';
+    }
+    quantityText.innerText = quantity.value;
+
 
     const expiryDate = document.getElementById('expiry-date-string');
     expiryDate.innerText = expiryDateString;
