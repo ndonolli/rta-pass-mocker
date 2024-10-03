@@ -47,7 +47,8 @@ main {
 
 #quantity-label {
   text-align: center;
-  font-size: 55px;
+  font-size: 50px;
+  font-weight: 600;
   background-color: #2899D4;
   color: white;
   border-radius: 30px;
