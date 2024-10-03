@@ -1,5 +1,5 @@
 let state = {
-    showPass: false,
+    showPass: true,
     type: 'rta'
 }
 
