@@ -1,5 +1,5 @@
 const cacheName = "cache_v1.0.0";
-const precachedResources = [
+const contentToCache = [
   "/",
   "/index.html",
   "/jpt_logo.webp",
