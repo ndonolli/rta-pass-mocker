@@ -87,9 +87,11 @@ let createTimeString = () => {
     if (second.length === 1) {
         second = '0' + second;
     }
+
     const ampm = isPM ? 'PM' : 'AM';
 
     hour = (isPM && hour !== 12) ? hour - 12 : hour;
+    hour = hour === 0 ? 12 : hour;
     const formatted = `${hour}:${minute}:${second} ${ampm}`;
     return formatted;
 }
