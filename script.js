@@ -68,8 +68,10 @@ let createDateString = () => {
     if (minute.length === 1) {
         minute = '0' + minute;
     }
+    console.log(hour)
     const ampm = isPM ? 'PM' : 'AM';
     hour = (isPM && hour !== 12) ? hour - 12 : hour;
+    hour = hour === 0 ? 12 : hour;
     const formatted = `${month} ${day}, ${year}, ${hour}:${minute} ${ampm}`;
     return formatted;
 }
