@@ -1,0 +1,23 @@
+name: Generate Website APK
+on: [push, workflow_dispatch]
+
+jobs:
+  convert-to-apk:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Build Web URL to APK
+        uses: tttstudios/html-to-apk-action@v1
+        with:
+          # If your files are in the main folder of the repo, keep '.'
+          # If they are in a specific folder, change it to that folder name
+          web-dir: '.' 
+          app-name: 'RTA Pass Mocker'
+
+      - name: Save APK File
+        uses: actions/upload-artifact@v4
+        with:
+          name: rta-mocker-app
+          path: app-release-unsigned.apk
